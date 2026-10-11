@@ -1,0 +1,117 @@
+Collecting requests (from -r requirements.txt (line 1))
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting numpy (from -r requirements.txt (line 2))
+  Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting scipy (from -r requirements.txt (line 3))
+  Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting networkx (from -r requirements.txt (line 4))
+  Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting scikit-learn (from -r requirements.txt (line 5))
+  Downloading scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.3 kB)
+Collecting matplotlib (from -r requirements.txt (line 6))
+  Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (80 kB)
+Collecting charset_normalizer<4,>=2 (from requests->-r requirements.txt (line 1))
+  Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Collecting idna<4,>=2.5 (from requests->-r requirements.txt (line 1))
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->-r requirements.txt (line 1))
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting certifi>=2023.5.7 (from requests->-r requirements.txt (line 1))
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting joblib>=1.4.0 (from scikit-learn->-r requirements.txt (line 5))
+  Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn->-r requirements.txt (line 5))
+  Downloading narwhals-2.27.1-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn->-r requirements.txt (line 5))
+  Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+Collecting contourpy>=1.0.1 (from matplotlib->-r requirements.txt (line 6))
+  Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+Collecting cycler>=0.10 (from matplotlib->-r requirements.txt (line 6))
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib->-r requirements.txt (line 6))
+  Downloading fonttools-4.66.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (130 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->-r requirements.txt (line 6))
+  Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Collecting packaging>=20.0 (from matplotlib->-r requirements.txt (line 6))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pillow>=9 (from matplotlib->-r requirements.txt (line 6))
+  Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+Collecting pyparsing>=3 (from matplotlib->-r requirements.txt (line 6))
+  Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting python-dateutil>=2.7 (from matplotlib->-r requirements.txt (line 6))
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting cloudpickle>=3.0 (from joblib>=1.4.0->scikit-learn->-r requirements.txt (line 5))
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib->-r requirements.txt (line 6))
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 85.8 MB/s  0:00:00
+Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 61.2 MB/s  0:00:00
+Downloading networkx-3.6.1-py3-none-any.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 69.4 MB/s  0:00:00
+Downloading scikit_learn-1.9.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.3/9.3 MB 70.2 MB/s  0:00:00
+Downloading matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 71.7 MB/s  0:00:00
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading fonttools-4.66.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 72.5 MB/s  0:00:00
+Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 68.0 MB/s  0:00:00
+Downloading narwhals-2.27.1-py3-none-any.whl (483 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pillow-12.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 81.2 MB/s  0:00:00
+Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Installing collected packages: urllib3, threadpoolctl, six, pyparsing, pillow, packaging, numpy, networkx, narwhals, kiwisolver, idna, fonttools, cycler, cloudpickle, charset_normalizer, certifi, scipy, requests, python-dateutil, joblib, contourpy, scikit-learn, matplotlib
+
+Successfully installed certifi-2026.7.22 charset_normalizer-3.5.2 cloudpickle-3.1.2 contourpy-1.3.3 cycler-0.12.1 fonttools-4.66.1 idna-3.20 joblib-1.6.0 kiwisolver-1.5.1 matplotlib-3.11.2 narwhals-2.27.1 networkx-3.6.1 numpy-2.4.6 packaging-26.3 pillow-12.3.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 requests-2.34.2 scikit-learn-1.9.1 scipy-1.17.1 six-1.17.0 threadpoolctl-3.7.0 urllib3-2.8.0
+graph SNAP email-Eu-core: 986 nodes, 16064 edges
+27 tuning instances, 9 held-out test instances
+cfg 0 {'tenure': 0, 'patience': 100, 'perturb': 0.4, 'n_out': 3} cv coverage=0.8624
+cfg 1 {'tenure': 0, 'patience': 100, 'perturb': 0.4, 'n_out': 1} cv coverage=0.8624
+cfg 2 {'tenure': 20, 'patience': 300, 'perturb': 0.1, 'n_out': 3} cv coverage=0.8624
+cfg 3 {'tenure': 0, 'patience': 100, 'perturb': 0.4, 'n_out': 10} cv coverage=0.8624
+cfg 4 {'tenure': 0, 'patience': 100, 'perturb': 0.1, 'n_out': 1} cv coverage=0.8624
+cfg 5 {'tenure': 20, 'patience': 100, 'perturb': 0.2, 'n_out': 10} cv coverage=0.8624
+cfg 6 {'tenure': 10, 'patience': 20, 'perturb': 0.1, 'n_out': 3} cv coverage=0.8624
+cfg 7 {'tenure': 20, 'patience': 20, 'perturb': 0.2, 'n_out': 10} cv coverage=0.8622
+cfg 8 {'tenure': 20, 'patience': 100, 'perturb': 0.4, 'n_out': 10} cv coverage=0.8624
+cfg 9 {'tenure': 20, 'patience': 100, 'perturb': 0.4, 'n_out': 1} cv coverage=0.8616
+cfg 10 {'tenure': 0, 'patience': 100, 'perturb': 0.4, 'n_out': 10} cv coverage=0.8624
+cfg 11 {'tenure': 10, 'patience': 20, 'perturb': 0.4, 'n_out': 1} cv coverage=0.8623
+selected: {'tenure': 0, 'patience': 100, 'perturb': 0.4, 'n_out': 3}
+MILP n=300 k=3 ref=295.0
+MILP n=300 k=6 ref=300.0
+MILP n=300 k=10 ref=300.0
+MILP n=500 k=3 ref=352.0
+MILP n=500 k=6 ref=429.0
+MILP n=500 k=10 ref=474.0
+MILP n=700 k=3 ref=492.0
+MILP n=700 k=6 ref=592.0
+MILP n=700 k=10 ref=650.0
+sa mean coverage 431.48148148148147
+ts mean coverage 431.55555555555554
+{
+  "baseline_score": 0.9997895622895622,
+  "improved_score": 1.0,
+  "improvement": 0.00021043771043782744,
+  "baseline_mean_coverage": 431.48148148148147,
+  "improved_mean_coverage": 431.55555555555554,
+  "baseline_seed_std": 0.0002976038641357608,
+  "improved_seed_std": 0.0,
+  "improved_win_rate": 0.1111111111111111,
+  "tuning_cv_best_coverage_fraction": 0.8623562610229277
+}

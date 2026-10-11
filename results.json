@@ -1,0 +1,28 @@
+{
+  "question": "Under the same short time budget, can a greedy-seeded, CV-tuned swap local search place k monitors with higher coverage than default simulated annealing?",
+  "method": "BFS-sampled subgraphs x several k; closed-neighbourhood coverage; random search on tuning instances with grouped CV; same wall-clock budget per instance; relative to HiGHS MILP incumbent.",
+  "dataset": {
+    "name": "SNAP email-Eu-core",
+    "source_url": "https://snap.stanford.edu/data/email-Eu-core.txt.gz",
+    "n_rows": 16064,
+    "n_train": 27,
+    "n_test": 9,
+    "same_as_paper": false
+  },
+  "metric_name": "covered-node fraction relative to MILP reference value",
+  "higher_is_better": true,
+  "baseline": "Simulated-annealing swap metaheuristic with default parameters (T0=1, alpha=0.999) from a random start.",
+  "improved": "Lazy-greedy initialisation + best-swap tabu local search with restarts; params from random search (12 configs, 3-fold grouped CV on tuning instances): {'tenure': 0, 'patience': 100, 'perturb': 0.4, 'n_out': 3}.",
+  "metrics": {
+    "baseline_score": 0.9997895622895622,
+    "improved_score": 1.0,
+    "improvement": 0.00021043771043782744,
+    "baseline_mean_coverage": 431.48148148148147,
+    "improved_mean_coverage": 431.55555555555554,
+    "baseline_seed_std": 0.0002976038641357608,
+    "improved_seed_std": 0.0,
+    "improved_win_rate": 0.1111111111111111,
+    "tuning_cv_best_coverage_fraction": 0.8623562610229277
+  },
+  "notes": "n_rows is the edge count; n_train/n_test count instances (graph, k), split by sampled graph. Budget 2.0s per instance/method/seed; tuning used a shorter 0.3s budget. MILP time limit 20s, so reference may be sub-optimal and scores can exceed 1. Problem formulation (closed-neighbourhood coverage) is an assumption since the paper's exact model is unavailable. Wall-clock budgets make results machine-dependent. Small test set (3 graphs x 3 k); seed std is over per-seed means across test instances."
+}
