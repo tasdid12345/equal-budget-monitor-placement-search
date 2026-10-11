@@ -26,3 +26,23 @@ Results are written to `results.json` (and a chart to `figures/`) when the scrip
 
 ---
 _The code in this repository was drafted with AI assistance and runs automatically on GitHub Actions; results come from the latest run._
+
+## Results (latest run)
+
+On the SNAP email-Eu-core graph (9 held-out test instances), my re-implementation of your simulated-annealing baseline reached 99.98% of the MILP reference coverage, while my tabu-search variant reached 100%, a difference of only about 0.02 percentage points.
+
+| Metric | Value |
+|---|---|
+| baseline_score | 0.9998 |
+| improved_score | 1 |
+| improvement | 0.0002104 |
+| baseline_mean_coverage | 431.5 |
+| improved_mean_coverage | 431.6 |
+| baseline_seed_std | 0.0002976 |
+| improved_seed_std | 0 |
+| improved_win_rate | 0.1111 |
+| tuning_cv_best_coverage_fraction | 0.8624 |
+
+Run on 2026-10-11. Full output: [results.json](results.json) · [run.log](run.log)
+
+Notes: n_rows is the edge count; n_train/n_test count instances (graph, k), split by sampled graph. Budget 2.0s per instance/method/seed; tuning used a shorter 0.3s budget. MILP time limit 20s, so reference may be sub-optimal and scores can exceed 1. Problem formulation (closed-neighbourhood coverage) is an assumption since the paper's exact model is unavailable. Wall-clock budgets make results machine-dependent. Small test set (3 graphs x 3 k); seed std is over per-seed means across test instances.
